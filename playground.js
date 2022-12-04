@@ -1,27 +1,7 @@
-const FeatureFlag = require('./src/feature-flag');
+const Feature1 = require('./src/feature-flags/feature1');
+const fieldList = require('./src/generated-constants/field-list');
+const tableList = require('./src/generated-constants/table-list');
 
-class Feature1 extends FeatureFlag {
-    constructor(fieldList, tableList) {
-        super(fieldList, tableList);
-    }
-    execute() {
-        add('fieldList.account', { id: 123 });
-        update('fieldList.client.fields.name', 'Ritik', 'Goyal');
-        remove('tableList.table1');
-    }
-}
-
-const fieldList = {
-    client: {
-        fields: {
-            name: 'Ritik'
-        }
-    }
-};
-
-const tableList = {
-    'table1': {}
-}
 const ff = new Feature1(fieldList, tableList);
 
 
