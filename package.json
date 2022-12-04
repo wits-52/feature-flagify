@@ -1,0 +1,11 @@
+{
+  "name": "feature-flagify",
+  "version": "1.0.0",
+  "description": "utility to maintain versions of files and turn on/off features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wits-52",
+  "license": "ISC"
+}
